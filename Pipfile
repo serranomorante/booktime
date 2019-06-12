@@ -5,11 +5,13 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [packages]
 django = "*"
 psycopg2 = "*"
 psycopg2-binary = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
