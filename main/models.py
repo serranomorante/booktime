@@ -23,6 +23,9 @@ class Product(models.Model):
 
     objects = ActiveManager()
 
+    def __str__(self):
+        return self.name
+
 
 class ProductImage(models.Model):
     product = models.ForeignKey(
@@ -38,3 +41,6 @@ class ProductTag(models.Model):
     slug = models.SlugField(max_length=48)
     description = models.TextField(blank=True)
     active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name
