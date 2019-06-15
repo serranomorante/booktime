@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'booktime.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'serranomorante',
-        'USER': 'serranomorante',
+        'NAME': 'booktime',
+        'USER': 'pserrano',
         'PASSWORD': 'Xj8eqnXj8eqn',
         'HOST': 'localhost',
         'PORT': '5432',
@@ -141,3 +141,7 @@ else:
     EMAIL_BACKEND = (
         "django.core.mail.backends.console.EmailBackend"
     )
+
+AUTH_USER_MODEL = "main.User"
+
+LOGIN_REDIRECT_URL = "/"
