@@ -5,6 +5,16 @@ from main import views, models
 from main import forms
 
 urlpatterns = [
+    path("add_to_basket/", views.add_to_basket,
+        name="add_to_basket"),
+    path("address/", views.AddressListView.as_view(),
+    name="address_list"),
+    path("addres/create/", views.AddressCreateView.as_view(),
+    name="address_create"),
+    path("address/<int:pk>/", views.AddressUpdateView.as_view(),
+    name="address_update"),
+    path("addres/<int:pk>/delete", views.AddressDeleteView.as_view(),
+    name="address_delete"),
     path("login/", auth_views.LoginView.as_view(
         template_name="login.html",
         form_class=forms.AuthenticationForm,
