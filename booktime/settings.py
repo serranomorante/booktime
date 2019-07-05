@@ -79,9 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'booktime',
-        'USER': 'pserrano',
+        'USER': 'administrador',
         'PASSWORD': 'Xj8eqnXj8eqn',
-        'HOST': 'localhost',
+        'HOST': '179.49.7.196',
         'PORT': '5432',
     }
 }
