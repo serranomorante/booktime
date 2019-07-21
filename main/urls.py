@@ -5,6 +5,7 @@ from main import views, models
 from main import forms
 
 urlpatterns = [
+    path('basket/', views.manage_basket, name="basket"),
     path("add_to_basket/", views.add_to_basket,
         name="add_to_basket"),
     path("address/", views.AddressListView.as_view(),

@@ -193,9 +193,9 @@ class TestPage(TestCase):
         response = self.client.get(
             reverse("add_to_basket"), {"product_id": cb.id}
         )
-        response = self.client.get(
-            reverse("add_to_basket"), {"product_id": cb.id}
-        )
+        # response = self.client.get(
+        #     reverse("add_to_basket"), {"product_id": cb.id}
+        # )
 
         self.assertTrue(
             models.Basket.objects.filter(user=user1).exists()
