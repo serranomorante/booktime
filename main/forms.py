@@ -14,7 +14,9 @@ from django.forms import inlineformset_factory
 from . import models
 from . import widgets
 
+
 logger = logging.getLogger(__name__)
+
 
 class ContactForm(forms.Form):
     name = forms.CharField(label='Your name', max_length=100)

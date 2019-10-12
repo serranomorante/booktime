@@ -77,14 +77,20 @@ WSGI_APPLICATION = 'booktime.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'booktime',
-        'USER': 'administrador',
-        'PASSWORD': 'Xj8eqnXj8eqn',
-        'HOST': '179.49.7.196',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'booktime',
+#         'USER': 'administrador',
+#         'PASSWORD': 'Xj8eqnXj8eqn',
+#         'HOST': '179.49.7.196',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
